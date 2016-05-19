@@ -71,6 +71,14 @@ a {
 }
 
 //----------------------------------------------------//
+// Animation
+
+@keyframes twink{
+	0% {background-position:0 0;}
+	100% {background-position:-10000px 5000px;}
+}
+
+//----------------------------------------------------//
 
 @font-face{
 	font-family: 'MyriadPro';
@@ -86,13 +94,37 @@ body{
 	margin: 0 auto;
 }
 
+.bg{
+	position: absolute;
+	top:0;
+  	left:0;
+  	right:0;
+  	bottom:0;
+	width: 100%;
+	min-height: 700px;
+	background: #000 url(http://sylvaingarnot.fr/media/stars.png) repeat top center;
+	z-index: 1;
+}
+.twinkling-bg{
+	position: absolute;
+	top:0;
+  	left:0;
+  	right:0;
+  	bottom:0;
+	width: 100%;
+	background: transparent url(http://sylvaingarnot.fr/media/twinkling.png) repeat top center;
+  	z-index:2;
+  	animation: twink 200s linear infinite;
+}
+
 header{
+	position: relative;
 	width: 100%;
 	min-height: 700px;
 	box-sizing: border-box;
-	background-color: #1b1d20;
-	padding-top: 300px;
+	z-index: 5;
 	& h1{
+		padding: 300px 12px 0 12px;
 		font-size: 30px;
 		font-family: 'MyriadPro';
 		font-weight: 900;
