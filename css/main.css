@@ -122,7 +122,7 @@ body {
   bottom: 0;
   width: 100%;
   min-height: 700px;
-  background: #000 url(http://sylvaingarnot.fr/media/stars.png) repeat top center;
+  background: #000 url(../img/stars.png) repeat top center;
   z-index: 1;
 }
 
@@ -133,7 +133,7 @@ body {
   right: 0;
   bottom: 0;
   width: 100%;
-  background: transparent url(http://sylvaingarnot.fr/media/twinkling.png) repeat top center;
+  background: transparent url(../img/twinkling.png) repeat top center;
   z-index: 2;
   -webkit-animation: twink 200s linear infinite;
           animation: twink 200s linear infinite;
@@ -249,12 +249,52 @@ header ul li:last-child:after {
 }
 
 .content__container a {
+  position: relative;
   height: 250px;
   width: 250px;
   margin-bottom: 50px;
 }
 
+.content__container a:after {
+  position: absolute;
+  content: "";
+  font-family: 'Lato';
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  line-height: 50px;
+  height: 0px;
+  width: 250px;
+  background-color: #000;
+  opacity: 0.9;
+  bottom: 0;
+  left: 0;
+}
+
+.content__container a:hover:after {
+  height: 50px;
+  transition: height 0.4s;
+}
+
+.content__container a:first-child:hover:after {
+  content: "html+css+responsive";
+}
+
+.content__container a:nth-child(2):hover:after {
+  content: "html+css+bootstrap3";
+}
+
+.content__container a:nth-child(3):hover:after {
+  content: "html+css+js";
+}
+
+.content__container a:nth-child(4):hover:after {
+  content: "html+css+responsive";
+}
+
 .content__container__block {
+  position: relative;
   height: 250px;
   width: 250px;
   background-color: black;
@@ -263,6 +303,7 @@ header ul li:last-child:after {
 }
 
 .content__container__block:hover {
+  transition: opacity 0.5s;
   opacity: 1;
 }
 
