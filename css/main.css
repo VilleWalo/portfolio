@@ -278,18 +278,22 @@ header ul li:last-child:after {
 }
 
 .content__container a:first-child:hover:after {
-  content: "html+css+responsive";
+  content: "js";
 }
 
 .content__container a:nth-child(2):hover:after {
-  content: "html+css+bootstrap3";
+  content: "html+css+responsive";
 }
 
 .content__container a:nth-child(3):hover:after {
-  content: "html+css+js";
+  content: "html+css+bootstrap3";
 }
 
 .content__container a:nth-child(4):hover:after {
+  content: "html+css+js";
+}
+
+.content__container a:nth-child(5):hover:after {
   content: "html+css+responsive";
 }
 
@@ -373,4 +377,34 @@ header ul li:last-child:after {
             transform: translateX(-50%);
     position: absolute;
   }
+}
+
+.social_git {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 40px;
+  width: 32px;
+  height: 32px;
+  background-image: url(../img/git.png);
+  opacity: 0.5;
+}
+
+.social_git:hover {
+  opacity: 1;
+}
+
+.social_vk {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 80px;
+  width: 32px;
+  height: 32px;
+  background-image: url(../img/vk.png);
+  opacity: 0.5;
+}
+
+.social_vk:hover {
+  opacity: 1;
 }

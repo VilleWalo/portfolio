@@ -232,15 +232,18 @@ header{
             	transition: height 0.4s;
             }
             &:first-child:hover:after{
-            	content: "html+css+responsive";
+            	content: "js";
             }
             &:nth-child(2):hover:after{
-            	content: "html+css+bootstrap3";
+            	content: "html+css+responsive";
             }
             &:nth-child(3):hover:after{
-            	content: "html+css+js";
+            	content: "html+css+bootstrap3";
             }
             &:nth-child(4):hover:after{
+            	content: "html+css+js";
+            }
+            &:nth-child(5):hover:after{
             	content: "html+css+responsive";
             }
 		}
@@ -302,8 +305,10 @@ header{
 				height: 9px;
 				background-image: url(../img/massage.png);
 			}
+
 			& a{
 				color: #2eb398;
+
 			}
 		}
 	}
@@ -317,5 +322,32 @@ header{
 		left: 50%;
 		transform: translateX(-50%);
 		position: absolute;
+	}
+}
+
+.social_git {
+	content: "";
+	position: absolute;
+	top: 4px;
+	left: 40px;
+	width: 32px;
+	height: 32px;
+	background-image: url(../img/git.png);
+	opacity: 0.5;
+	&:hover{
+		opacity: 1;
+	}
+}
+.social_vk {
+	content: "";
+	position: absolute;
+	top: 4px;
+	left: 80px;
+	width: 32px;
+	height: 32px;
+	background-image: url(../img/vk.png);
+	opacity: 0.5;
+	&:hover{
+		opacity: 1;
 	}
 }
