@@ -231,21 +231,25 @@ header{
             	height: 50px;
             	transition: height 0.4s;
             }
-            &:first-child:hover:after{
-            	content: "js";
+            &:nth-child(1):hover:after{
+            	content: "js+ajax";
             }
             &:nth-child(2):hover:after{
-            	content: "html+css+responsive";
+            	content: "js";
             }
             &:nth-child(3):hover:after{
-            	content: "html+css+bootstrap3";
-            }
-            &:nth-child(4):hover:after{
-            	content: "html+css+js";
-            }
-            &:nth-child(5):hover:after{
             	content: "html+css+responsive";
             }
+            &:nth-child(4):hover:after{
+            	content: "html+css+bootstrap3";
+            }
+            &:nth-child(5):hover:after{
+            	content: "html+css+js";
+            }
+            &:nth-child(6):hover:after{
+            	content: "html+css+responsive";
+            }
+
 		}
 		&__block {
 			position: relative;
