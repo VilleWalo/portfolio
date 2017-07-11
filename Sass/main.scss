@@ -231,22 +231,25 @@ header{
             	height: 50px;
             	transition: height 0.4s;
             }
-            &:nth-child(1):hover:after{
-            	content: "js+ajax";
+            &:nth-child(2):hover:after{
+            	content: "frontend + php templates";
             }
             &:nth-child(2):hover:after{
-            	content: "js";
+            	content: "js+ajax";
             }
             &:nth-child(3):hover:after{
-            	content: "html+css+responsive";
+            	content: "js";
             }
             &:nth-child(4):hover:after{
-            	content: "html+css+bootstrap3";
+            	content: "html+css+responsive";
             }
             &:nth-child(5):hover:after{
-            	content: "html+css+js";
+            	content: "html+css+bootstrap3";
             }
             &:nth-child(6):hover:after{
+            	content: "html+css+js";
+            }
+            &:nth-child(7):hover:after{
             	content: "html+css+responsive";
             }
 
