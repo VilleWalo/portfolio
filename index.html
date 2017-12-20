@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<link rel="stylesheet" href="css/main.css">
-	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<title>Kozlovskiy</title>
 </head>
@@ -13,65 +13,75 @@
 		<span class="name">Sergey Kozlovskiy</span>
 	</header>
 	<main>
-		<section>
-			<h1>Frontend Web Developer</h1>
-			<h2>Producing high quality responsive websites and exceptional user experience</h2>
+		<section class="main-info fullscreen">
+			<div class="container">
+				<h1 class="main-info__title">Frontend Web Developer</h1>
+				<h2 class="main-info__subtitle">Producing high quality responsive websites and exceptional user experience</h2>
+			</div>
 		</section>
-		<section>
-			
+		<section class="current-work fullscreen">
+			<div class="container current-work__wrapper">
+				<h2>Current place of work</h2>
+				<div class="row">
+					<div class="card current-work__info">
+						<h3>Mobirise Website Builder</h3>
+						<h4>Frontend developer since 2016</h4>
+						<p>Mobirise Website Builder is a freeware web design application, developed by Mobirise, that allows users to create and publish bootstrap websites, without coding. It has been featured in Huffington Post, IDG, TechRadar, About.com and noted as an offline alternative to popular online website builders like Wix.com, Weebly, Jimdo, Webydo, Squarespace.</p>
+					</div>
+					<div class="card">
+						<img src="img/imac.png" alt="mobirise">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="current-studing fullscreen">
+			<div class="container current-education__wrapper">
+				<h2>Current education</h2>
+				<div class="row">
+					<div class="card">
+						<img src="img/udacity.png" alt="udacity">
+					</div>
+					<div class="card current-education__info">
+						<h3>Udacity</h3>
+						<h4>Google Developer Challenge Scholarship: Mobile Web</h4>
+						<p>Udacity web development courses are built with industry tech leaders such as Google, Github, Amazon Web Services and AT&T.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="works fullscreen">
+			<div class="container works__wrapper">
+				<h2>Some of my work</h2>
+				<div class="row">
+					<div class="card">
+						<a href="http://clicksport.ru/">
+							<span class="content__container__block" style="background-image: url(img/clicksport.png)"></span>
+						</a>
+					</div>
+					<div class="card">
+						<a href="http://villewalo.github.io/weather_app/">
+							<span class="content__container__block" style="background-image: url(img/weather.png)"></span>
+						</a>
+					</div>
+					<div class="card">
+						<a href="http://villewalo.github.io/calculator/">
+							<span class="content__container__block" style="background-image: url(img/calc.png)"></span>
+						</a>
+					</div>
+					<div class="card">
+						<a href="http://villewalo.github.io/minimo/">
+							<span class="content__container__block" style="background-image: url(img/minimo.jpg)"></span>
+						</a>
+					</div>
+				</div>
+			</div>
 		</section>
 	</main>
-	<div class="main_wraper">
-		<div class="bg"></div>
-		<div class="twinkling-bg"></div>
-
-		<header>
-			<h1 id="headerH1">Responsive Front-end Development</h1>
-			<h2 id="Name">Sergey Kozlovskiy</h2>
-			<ul class='header__skill-list'>
-				<li>HTML</li>
-				<li>CSS</li>
-				<li>JavaScript</li>
-				<li>Performance</li>
-			</ul>
-		</header>
-
-		<div class="content">
-			<h2>My works</h2>
-			<div class="content__container">
-				<a href="http://clicksport.ru/"><div class="content__container__block" style="background-image: url(img/clicksport.png);"></div></a>
-				<a href="http://villewalo.github.io/weather_app/"><div class="content__container__block" style="background-image: url(img/weather.png);"></div></a>
-				<a href="http://villewalo.github.io/calculator/"><div class="content__container__block" style="background-image: url(img/calc.png);"></div></a>
-				<a href="http://villewalo.github.io/Axit/"><div class="content__container__block" style="background-image: url(img/ax.jpg);"></div></a>
-				<a href="http://villewalo.github.io/minimo/"><div class="content__container__block" style="background-image: url(img/minimo.jpg);"></div></a>
-				<a href="http://villewalo.github.io/hexal/"><div class="content__container__block" style="background-image: url(img/hex.jpg);"></div></a>
-				<a href="http://villewalo.github.io/"><div class="content__container__block" style="background-image: url(img/sea.jpg);"></div></a>
-				
-			</div>
+	<footer>
+		<div class="footer_wraper">
+			<h3>Contact</h3>
+			<span>k.s.a1991@yandex.ru</span>
 		</div>
-		
-		<div class="contacts">
-			<h2>Contact</h2>
-			<ul>
-				<li>+7 999 100 13 39</li>
-				<li>k.s.a1991@yandex.ru</li>
-				<li>
-					<a href="https://github.com/VilleWalo">
-						<div class="social_git"></div>
-					</a>
-					<a href="https://vk.com/show_it">
-						<div class="social_vk"></div>
-					</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-<script type="text/javascript">
-	var clientHeight = document.documentElement.clientHeight;
-	var realHeight = document.getElementsByTagName('HEADER')[0];
-	var h1Padding = document.getElementById('headerH1');
-	realHeight.style.height = clientHeight + "px";
-	h1Padding.style.paddingTop = clientHeight/2 + "px";
-</script>	
+	</footer>	
 </body>
 </html>
