@@ -229,6 +229,23 @@ footer{
   font-size: 1.5em;
 }
 
+.contact_me_wraper{
+  display: block;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #3c3c3c;
+}
+
+.contact_me_wraper h2{
+  font-size: 1.2em;
+  line-height: 1.2;
+  letter-spacing: .3px;
+}
+
 @media (max-width: 600px){
   body{
     font-size: 8px;
